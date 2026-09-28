@@ -37,13 +37,16 @@
                 
                 string Xformatado = VerticeX.ToString("+0.####;-0.####;0", System.Globalization.CultureInfo.InvariantCulture);
                 string Yformatado = VerticeY.ToString("+0.####;-0.####;0", System.Globalization.CultureInfo.InvariantCulture);
+                
 
                 
                 string xFracao = ConverterParaFracao(VerticeX);
                 string yFracao = ConverterParaFracao(VerticeY);
 
                 borderResultado.IsVisible = true;
+                borderDelta.IsVisible = true;
                 lblResultado.Text = $"Fração: ({xFracao}; {yFracao})\nDecimal: ({Xformatado}; {Yformatado})";
+                lblDelta.Text = $"Delta: ({resulDelta})";
             }
             else
             {

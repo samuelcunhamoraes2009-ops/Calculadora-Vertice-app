@@ -117,8 +117,26 @@
                        HorizontalTextAlignment="Center" />
 
             </Border>
-                
 
+            <Border x:Name="borderDelta"
+                    BackgroundColor="#112240"
+                    Stroke="#233554"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 12"
+                    WidthRequest="280"
+                    Padding="15"
+                    HorizontalOptions="Center"
+                    Margin="0,15,0,0"
+                    IsVisible="False">
+
+                <Label x:Name="lblDelta"
+                Text="Delta: ()"
+                FontSize="18"
+                FontAttributes="Bold"
+                TextColor="#64FFDA"
+                HorizontalTextAlignment="Center" />
+                
+            </Border>
         </VerticalStackLayout>
     </ScrollView>
 
