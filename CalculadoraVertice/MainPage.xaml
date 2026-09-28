@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraVertice.MainPage"
+             BackgroundColor="#0A192F">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20">
+
+            <!-- Cabeçalho -->
+            <Border BackgroundColor="#112240"
+                    Stroke="#233554"
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="20,10"
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,25">
+
+                <VerticalStackLayout Spacing="6">
+
+                    <Label Text="Calculadora de Vértice"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="#E6F1FF"
+                           HorizontalOptions="Center"/>
+
+                    <Label Text="Equação: ax² + bx + c = 0"
+                           FontSize="14"
+                           TextColor="#64FFDA"
+                           HorizontalOptions="Center"/>
+
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- Campo A -->
+            <Border BackgroundColor="#112240"
+                    Stroke="#233554"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 10"
+                    WidthRequest="280"
+                    Padding="10,2"
+                    HorizontalOptions="Center">
+
+                <Entry x:Name="txtA"
+                       Placeholder="Digite o valor de A"
+                       PlaceholderColor="#8892B0"
+                       TextColor="#E6F1FF"
+                       Keyboard="Numeric"
+                       HorizontalTextAlignment="Center" />
+            </Border>
+
+            <!-- Campo B -->
+            <Border BackgroundColor="#112240"
+                    Stroke="#233554"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 10"
+                    WidthRequest="280"
+                    Padding="10,2"
+                    HorizontalOptions="Center">
+
+                <Entry x:Name="txtB"
+                       Placeholder="Digite o valor de B"
+                       PlaceholderColor="#8892B0"
+                       TextColor="#E6F1FF"
+                       Keyboard="Numeric"
+                       HorizontalTextAlignment="Center" />
+            </Border>
+
+            <!-- Campo C -->
+            <Border BackgroundColor="#112240"
+                    Stroke="#233554"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 10"
+                    WidthRequest="280"
+                    Padding="10,2"
+                    HorizontalOptions="Center">
+
+                <Entry x:Name="txtC"
+                       Placeholder="Digite o valor de C"
+                       PlaceholderColor="#8892B0"
+                       TextColor="#E6F1FF"
+                       Keyboard="Numeric"
+                       HorizontalTextAlignment="Center" />
+            </Border>
+
+            <Button
+                Text="Calcular Vértice"
+                BackgroundColor="#64FFDA"
+                TextColor="#0A192F"
+                FontAttributes="Bold"
+                FontSize="16"
+                CornerRadius="10"
+                WidthRequest="280"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                Margin="0,10,0,0"
+                Clicked="OnCalcularClicked"
+                
+             />
+
+            <Border x:Name="borderResultado"
+                    BackgroundColor="#112240"
+                    Stroke="#233554"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 12"
+                    WidthRequest="280"
+                    Padding="15"
+                    HorizontalOptions="Center"
+                    Margin="0,15,0,0"
+                    IsVisible="False">
+
+                <Label x:Name="lblResultado"
+                       Text="Vértice: V(x, y)"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#64FFDA"
+                       HorizontalTextAlignment="Center" />
+
+            </Border>
+                
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
